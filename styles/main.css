@@ -1,0 +1,38 @@
+@import "./aside.css";
+@import "./fish.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./quotes.css";
+@import "./travel.css";
+
+.contentContainer {
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+
+.contentLeft {
+    flex-basis: 75%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
+}
+
+.containerRight {
+    flex-basis: 25%;
+
+}
+
+.contentCard {
+    flex: 2 1 auto;
+    
+    
+
+}
+
+img {
+    max-width: 50%;
+}
