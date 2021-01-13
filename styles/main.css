@@ -86,14 +86,14 @@ footer a {
 
 /* Above is my first attempt, below is learning code from imitating*/
 
-@import "./fish.css";
-@import "./quoteCard.css";
-@import "./travelCard.css";
+
+
+
 
 body {
     width: 100%;
     height: 100%;
-   
+    
 }
 
 main {
