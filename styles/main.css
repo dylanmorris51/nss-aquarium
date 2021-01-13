@@ -5,34 +5,163 @@
 @import "./quotes.css";
 @import "./travel.css";
 
-.contentContainer {
-    background-color: aquamarine;
+/*header {
+    background-color: lightgray;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: navy;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a {
+    color: midnightblue;
+    font-size: 20px;
+    text-align: right;
+}
+
+nav a:hover {
+    color: dodgerblue;
+}
+
+
+.contentContainer {
+    background-color: slategrey;
+    display: flex;
+    /*flex-flow: row;
+    justify-content: flex-end;*/
+    
+/*}*/
+
+/*.containerLeft {
+    flex-basis: 90%;
+    /*display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;*/
+
+/*}*/
+
+/*.containerRight {
+    flex-basis: 25%;
+    background-color: tan;
+    font-size: 20px;
+
+}*/
+
+/*.contentCard {
+    background-color: white; 
+justify-content: space-around;
+display: flex;
+ flex: 2 1 auto; 
+flex-wrap: wrap;
+}
+
+.fishCard img {
+    width: 100%;
+    border-radius: 10px
+} */
+
+/*footer {
+    background-color: lightgray;
+    display: flex;
+    display: row;
+}
+
+footer a {
+    margin-right: 10px;
+    padding-right: 5px;
+}
+*/
+
+
+/* Above is my first attempt, below is learning code from imitating*/
+
+@import "./fish.css";
+@import "./quoteCard.css";
+@import "./travelCard.css";
+
+body {
+    width: 100%;
+    height: 100%;
+   
+}
+
+main {
+    background-image: url("https://images.unsplash.com/photo-1533713692156-f70938dc0d54?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80://images.unsplash.com/photo-1596980156816-246fd4201396?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80https://images.unsplash.com/photo-1560364897-91578ff41817?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80");
+    background-size: cover;
     
 }
 
-.contentLeft {
-    flex-basis: 75%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
 
+header {
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Potta One", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 200;
+    height: 200;
+    
+}
+
+h1 {
+    color: navy;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+nav, a {
+    color: midnightblue;
+    font-size: 20px;
+    text-align: right;
+}
+
+nav, a:hover {
+    color: dodgerblue;
+}
+
+.contentContainer {
+    display: flex;
+    /* background-color: slategrey;*/
+    background-image: url("https://images.unsplash.com/photo-1560364897-91578ff41817?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.containerLeft {
+    flex-basis: 75%;
 }
 
 .containerRight {
+    background-color: tan;
     flex-basis: 25%;
+    font-size: 20px;
+}
+
+
+
+footer {
+    background-color: lightgray;
+    display: flex;
+    display: row;
 
 }
 
-.contentCard {
-    flex: 2 1 auto;
-    
-    
-
-}
-
-img {
-    max-width: 40%;
+footer, a {
+    margin-right: 10px;
+    padding-right: 5px;
 }

@@ -1,28 +1,66 @@
-.fishcard {
-    max-width: 25%;
+/*.containerleft__fishCard {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: left;;
 }
 
-.fishcard__photo {
-    max-width: 25%;
+.fishcard {
+    border-radius: 35px;
+    background-color: whitesmoke;
+    border: solid darkslategrey;
+    display: flex;
+    padding: 2px;
+    /*flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-basis: 30%;*/
+/*}*/
+
+/*.fishcard__photo {
+    width: 300px;
+    height: 200px;
+    border-radius: 60px;
 }
 
 .fishcard__species {
     font-weight: bold;
+    
 }
 
-.containerLeft__fishCard {
-
-}
-
-.contentCard {
-
-}
 
 .fishcard p img {
     flex: 1 1 auto;
+}*/
+
+
+/* Above is my first attempt, below is learning code from imitating peer*/
+
+
+.containerLeft__fishList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: left;
+    
+}
+
+.fishCard {
+    border: solid darkslategrey;
+    border-radius: 35px;
+    padding: 2px;
+    background-color: mediumpurple;
+    margin: 8px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px darkslategray;
+}
+
+.fishIMG {
+    width: 300px;
+    height: 200px;
+    border-radius: 60px;
+    
 }
