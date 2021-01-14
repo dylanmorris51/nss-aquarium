@@ -15,7 +15,7 @@
 export const Location = (location) => {
     return `
     <div class="locationCard">
-        <img class="locationImg" src="${location.img}>
+        <img class="locationImg" src="${location.img}">
         <p class="locationCard__city">${location.city}</p>
         <p class="locationCard__country">${location.country}</p>
         <p class="locationCard__waterBody">${location.waterBody}</p>                

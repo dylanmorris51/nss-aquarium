@@ -14,7 +14,7 @@
 export const Quote = (quote) => {
     return `
     <div class="quoteCard">
-        <img class="quoteCardImg" src="${quote.img}>
+        <img class="quoteCardImg" src="${quote.img}">
         <p class="quoteCard__text">${quote.text}</p>                
         <p class="quoteCard__location">${quote.location}</p>
         <p class="quoteCard__date">${quote.date}</p>

@@ -25,11 +25,15 @@ TipsList()
 import { useLocation } from './Locations/LocationDataProvider.js'
 import { LocationList } from './Locations/LocationList.js'
 
-const allTheLocations = useLocations()
+const allTheLocations = useLocation()
 for (const location of allTheLocations) {
-    console.log(locaiton)
+    console.log(location)
 }
-LocationsList()
+LocationList()
+
+import { useQuote } from './Quotes/QuoteDataProvider.js'
+import { QuotesList } from './Quotes/QuoteList.js'
+
 
 const allTheQuotes = useQuote() 
 for (const quote of allTheQuotes) {

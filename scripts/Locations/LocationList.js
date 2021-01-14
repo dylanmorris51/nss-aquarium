@@ -20,10 +20,10 @@
 // }
 
 import { useLocation } from './LocationDataProvider.js'
-import { Location } from './LocationList.js'
+import { Location } from './Location.js'
 
 export const LocationList = () => {
-    const contentElement = document.querySelector(".containerLeft__travelLocations")
+    const contentElement = document.querySelector(".containerLeft")
     const locations = useLocation()
 
     let locationHTMLRepresentations = ""
@@ -32,7 +32,7 @@ export const LocationList = () => {
     }
 
     contentElement.innerHTML += `
-        <article class="locationList>
+        <article class="containerLeft__travelLocations contentArticle">
             ${locationHTMLRepresentations}
         </article>
         `

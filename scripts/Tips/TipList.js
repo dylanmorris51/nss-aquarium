@@ -1,4 +1,5 @@
 import { Tips } from "./Tip.js"
+import { useTips } from './TipDataProvider.js'
 
 export const TipsList = () => {
     const contentElement = document.querySelector(".containerRight")
