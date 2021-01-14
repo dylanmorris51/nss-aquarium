@@ -1,17 +1,17 @@
-import { useQuote } from './QuoteuseQuoteDataProvider.js'
-import { Quote } from './QuoteList.js'
+import { useQuote } from './QuoteDataProvider.js'
+import { Quote } from './Quote.js'
 
-export const QuoteList = () => {
-    const contentElement = document.querySelector(".containerLeft__travelQuotes")
+export const QuotesList = () => {
+    const contentElement = document.querySelector(".containerLeft")
     const quotes = useQuote()
 
     let quoteHTMLRepresentations = ""
     for (const quote of quotes) {
-        locationHTMLRepresentations += Quote(quote)
+        quoteHTMLRepresentations += Quote(quote)
     }
 
     contentElement.innerHTML += `
-        <article class="quoteList>
+        <article class="containerLeft__travelQuotes contentArticle">
             ${quoteHTMLRepresentations}
         </article>
         `
