@@ -78,3 +78,33 @@ export const useFish = () => {
 }
 
 
+export const mostHolyFish = () => {
+    const holyFish = []
+    for (fish of holyFish) {
+        if (fish % 3 === 0) {
+            holyFish.push()
+        }
+    }
+    return holyFish
+}
+
+export const soldierFish = () => {
+    const soldierFish = []
+    for (fish of soldierFish) {
+        if (fish % 5 === 0) {
+            soldierFish.push()
+        }
+    }
+    return soldierFish
+}
+
+export const nonHolyFish = () => {
+    const regularFish = []
+    for (fish of regularFish) {
+        if (fish % 3 && fish % 5 !== 0) {
+            regularFish.push()
+        }
+        
+    }
+    return regularFish
+}
