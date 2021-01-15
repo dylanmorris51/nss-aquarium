@@ -148,9 +148,10 @@ nav, a:hover {
 }
 
 .containerRight {
-    background-color: tan;
+    background-color: rgb(15, 199, 168);
     flex-basis: 25%;
     font-size: 20px;
+    
 }
 
 
