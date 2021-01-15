@@ -1,4 +1,11 @@
-import { useFish } from './Fish/FishDataProvider.js'
+import { useFish, mostHolyFish, soldierFish, nonHolyFish } from './Fish/FishDataProvider.js'
+
+const holyFish = mostHolyFish()
+console.log("Holy Fish:", holyFish)
+const soldiers = soldierFish()
+console.log("Soldier Fish:", soldiers)
+const regularFish = nonHolyFish()
+console.log("Regular Fish:", regularFish)
 
 const allTheFish = useFish();
 
@@ -40,3 +47,5 @@ for (const quote of allTheQuotes) {
     console.log(quote)
 }
 QuotesList()
+
+

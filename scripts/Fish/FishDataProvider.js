@@ -4,7 +4,7 @@ const fishCollection = [
         name: "Nemo",
         species: "Amphiprioninae",
         location: "Great Barrier Reef",
-        length: "1-2 inches",
+        length: 4,
         diet: "Seafood",
     },
     {
@@ -12,7 +12,7 @@ const fishCollection = [
         name: "Sanders",
         species: "Nephropidae",
         location: "Nova Scotia",
-        length: "14 inches",
+        length: 15,
         diet: "Seafood",
     },
     {
@@ -20,7 +20,7 @@ const fishCollection = [
         name: "Blitz",
         species: "Greenasaurus",
         location: "Tawain",
-        length: "3-4 inches",
+        length: 4,
         diet: "Seafood",
     },
     {
@@ -28,7 +28,7 @@ const fishCollection = [
         name: "Buzz",
         species: "Punkquatica",
         location: "Mariana Trench",
-        length: "5 inches",
+        length: 10,
         diet: "Seafood",
     },
     {
@@ -36,7 +36,7 @@ const fishCollection = [
         name: "The Bloopers",
         species: "Blooperium Squadica",
         location: "Mediterranean Ocean",
-        length: "1.5 inches",
+        length: 3,
         diet: "Seafood",
     },
     {
@@ -44,7 +44,7 @@ const fishCollection = [
         name: "Smoky",
         species: "Neonbaton",
         location: "Indian Ocean",
-        length: "5 inches",
+        length: 7,
         diet: "Seafood",
     },
     {
@@ -52,7 +52,7 @@ const fishCollection = [
         name: "Ms. Angel Heart",
         species: "Rosedinae",
         location: "Great Barrier Reef",
-        length: " 2-3 inches",
+        length: 3,
         diet: "Seafood",
     },
     {
@@ -60,7 +60,7 @@ const fishCollection = [
         name: "Chortle",
         species: "Sea Dragon",
         location: "Cambodia",
-        length: "4 inches",
+        length: 4,
         diet: "Seafood",
     },
     {
@@ -68,7 +68,7 @@ const fishCollection = [
         name: "Blush",
         species: "Floobonibun",
         location: "Madagascar",
-        length: "6 inches",
+        length: 5,
         diet: "Seafood",
     },
 ];
@@ -79,30 +79,35 @@ export const useFish = () => {
 
 
 export const mostHolyFish = () => {
+    const fishArray = useFish()
     const holyFish = []
-    for (fish of holyFish) {
-        if (fish % 3 === 0) {
-            holyFish.push()
+    for (const fish of fishArray) {
+        // debugger
+        if (fish.length % 3 === 0) {
+            holyFish.push(fish)
         }
     }
     return holyFish
 }
 
 export const soldierFish = () => {
-    const soldierFish = []
-    for (fish of soldierFish) {
-        if (fish % 5 === 0) {
-            soldierFish.push()
+    
+    const soldiers = []
+    const fishArray = useFish()
+    for (const fish of fishArray) {
+        if (fish.length % 5 === 0) {
+            soldiers.push(fish)
         }
     }
-    return soldierFish
+    return soldiers
 }
 
 export const nonHolyFish = () => {
+    const fishArray = useFish()
     const regularFish = []
-    for (fish of regularFish) {
-        if (fish % 3 && fish % 5 !== 0) {
-            regularFish.push()
+    for (const fish of fishArray) {
+        if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
+            regularFish.push(fish)
         }
         
     }
